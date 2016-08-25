@@ -1,0 +1,5 @@
+Commands that should be run in freesurfer script
+
+_autorecon1_
+mri_convert invol1.dcm orig/001.mgz -- Generates orig-folder. 
+
