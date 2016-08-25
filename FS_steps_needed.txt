@@ -1,5 +1,10 @@
 Commands that should be run in freesurfer script
 
 _autorecon1_
-mri_convert invol1.dcm orig/001.mgz -- Generates orig-folder. 
+recon-all -i $INFILE -s $SUBJNAME -motioncor #Will generate orig.mgz
+recon-all -s $SUBJNAME -normalization
 
+os.system("sudo -i")
+os.system("export $FREESURFER_HOME=/Applications/freesurfer")
+os.system("$SUBJECTS_DIR=/Applications/freesurfer/subjects")
+os.system("recon-all -i 109_T1MPRAGE06.nii -s testsubj -motioncor")
